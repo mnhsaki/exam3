@@ -1,13 +1,3 @@
-/*
-
-[Main Script]
-
-Project     : CloudSky - Multipurpose Domain, Hosting and WHMCS Template
-Version     : 1.0
-Author      : ThemeLooks
-Author URI  : https://themeforest.net/user/themelooks
-
-*/
 
 ;(function(a){var f=a(window);a(document);var h=a("body"),n="rtl"===a("html").attr("dir")?!0:!1,e=function(a,c){return"undefined"===typeof a?c:a};a(function(){a("[data-bg-img]").css("background-image",function(){return'url("'+a(this).data("bg-img")+'")'}).addClass("bg--img").removeAttr("data-bg-img").attr("data-rjs",2);a("img").attr("data-rjs",2);retinajs();var d=a('[data-trigger="sticky"]');d.each(function(){d.sticky({zIndex:999})});a('[data-form="validate"]').each(function(){a(this).validate({errorPlacement:function(){return!0}})});
 a('[data-form="ajax"]').each(function(){var b=a(this),k=b.find(".status");b.validate({errorPlacement:function(){return!0},submitHandler:function(b){var c=a(b);b=c.attr("action");c=c.serialize();a.post(b,c,function(b){k.show().html(b).delay(3E3).fadeOut("show")})}})});var c=a('[data-trigger="counterUp"]');c.length&&c.counterUp({delay:10,time:1E3});a("[data-countdown]").each(function(){var b=a(this);b.countdown(b.data("countdown"),function(b){a(this).html("<ul>"+b.strftime("<li><strong>%D</strong><span>Days</span></li><li><strong>%H</strong><span>Hours</span></li><li><strong>%M</strong><span>Minutes</span></li><li><strong>%S</strong><span>Secounds</span></li>")+
